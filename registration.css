@@ -1,0 +1,242 @@
+/* --- Основные стили (ПК) --- */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background-color: #fff;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 30px;
+    width: auto;
+   }
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.info-header {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: right;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.info-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+.info-header h3 {
+    margin: 5px 0 0;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Основная часть */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стиль формы регистрации */
+.registration-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.registration-form input:focus,
+.registration-form select:focus,
+.registration-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.registration-form .terms {
+    display: flex;
+    align-items: center;
+}
+
+.registration-form .terms label {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+/* Футер */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* iPhone 12 Pro */
+@media (min-width: 390px) and (max-width: 480px) {
+    header, footer {
+        padding: 15px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    /* Adjust table text for readability on smaller screens */
+    table, th, td {
+        font-size: 14px;
+    }
+
+
+
+    .info-header h2,
+    .info-header h3 {
+        font-size: 18px;
+    }
+
+    .logo {
+        height: 40px;
+        top: 5px;
+        left: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .registration-form {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .registration-form input,
+    .registration-form select,
+    .registration-form textarea {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .registration-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    footer {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+}

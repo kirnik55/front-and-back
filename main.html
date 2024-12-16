@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Никоноров Кирилл Алексеевич</title>
+    <!-- Подключение стилей Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="info-header text-center py-4 bg-light">
+        <img src="logo.png" alt="Логотип" class="logo mb-2">
+        <h3>Группа ЭФБО-08-23</h3>
+        <h2>Никоноров Кирилл Алексеевич</h2>
+    </div>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="first_semester.html">Первый семестр</a></li>
+                <li class="nav-item"><a class="nav-link" href="second_semester.html">Второй семестр</a></li>
+                <li class="nav-item"><a class="nav-link" href="registration-list.html">Регистрация</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
+                <li class="nav-item"><a class="nav-link" href="web-development.html">Разработка веб-приложения</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container my-4">
+        <section>
+            <h2 class="text-center">Добро пожаловать на мой сайт</h2>
+            <p class="text-center">Меня зовут Никоноров Кирилл Алексеевич, и я начинающий специалист по веб-разработке.</p>
+            <div class="profile-pic text-center my-3">
+                <img src="2024-09-05_15-37-23.png" alt="Фото профиля" class="img-fluid rounded-circle">
+            </div>
+
+            <h3>Фронтенд</h3>
+            <p>
+                Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. 
+                Фронтенд-разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство использования и эстетическую привлекательность.
+            </p>
+            
+            <div class="video-container text-center my-4">
+                <video width="640" height="360" controls class="w-100">
+                    <source src="video.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+
+            <h3>Бэкенд</h3>
+            <p>
+                Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд-разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и безопасность данных.
+            </p>
+
+            <div class="video-container text-center my-4">
+                <video width="640" height="360" controls class="w-100">
+                    <source src="video.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq my-5">
+            <h2 class="text-center">FAQ</h2>
+            <div class="accordion" id="faqAccordion">
+                
+                <div class="card">
+                    <div class="card-header" id="questionOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answerOne" aria-expanded="true" aria-controls="answerOne">
+                                Что такое фронтенд?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="answerOne" class="collapse show" aria-labelledby="questionOne" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Фронтенд — это клиентская часть веб-приложения, которая включает все визуальные элементы, такие как кнопки, формы и текст, и отвечает за взаимодействие с пользователем.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="questionTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
+                                Что такое бэкенд?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="answerTwo" class="collapse" aria-labelledby="questionTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Бэкенд — это серверная часть приложения, отвечающая за логику, обработку данных и взаимодействие с базой данных.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="questionThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerThree" aria-expanded="false" aria-controls="answerThree">
+                                Какие языки программирования используются для фронтенда?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="answerThree" class="collapse" aria-labelledby="questionThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Основные языки фронтенд-разработки — это HTML, CSS и JavaScript, которые помогают создавать интерактивные и визуально привлекательные интерфейсы.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 bg-light">
+        <p>© Никоноров Кирилл Алексеевич, 2024</p>
+    </footer>
+
+    <!-- Подключение скриптов Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

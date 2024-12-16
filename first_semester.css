@@ -1,0 +1,361 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background-color: #fff;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 48px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.info-header {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: right;
+    padding: 15px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.info-header h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+.info-header h3 {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Основная часть */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    margin-bottom: 8px;
+}
+
+aside li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+    padding: 8px;
+    background-color: #e0e0e0;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+aside li a:hover {
+    background-color: #d4d4d4;
+}
+
+.content {
+    padding: 15px;
+    flex: 1;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #007bff;
+    margin-top: 15px;
+}
+
+h4 {
+    color: #333;
+    margin-top: 10px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+/* Таблицы */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+/* Чекбоксы */
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* Футер */
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Модальные окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Кнопки */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+table tbody tr:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+/* Основные настройки для мобильных экранов */
+@media (max-width: 768px) {
+    /* Шапка и логотип */
+    header, footer {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 36px; /* Уменьшаем размер логотипа */
+        width: auto;
+        left: 5px;
+    }
+
+    /* Скрыть название и информацию в правом углу */
+    .info-header h2, .info-header h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* Навигация */
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Контент */
+    main {
+        padding: 10px;
+    }
+
+    /* Сайдбар */
+    aside {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Таблицы */
+    table, th, td {
+        font-size: 12px;
+    }
+
+    .table-container {
+        overflow-x: auto; /* Даем возможность прокрутки таблицы */
+    }
+
+    /* Карта */
+    iframe {
+        width: 100%; /* Карта будет растягиваться на всю ширину экрана */
+        height: 300px;
+    }
+
+    /* Рабочая программа */
+    object embed {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Кнопки и формы */
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Очень маленькие экраны, до 480px */
+@media (max-width: 480px) {
+    .info-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-header h2, .info-header h3 {
+        font-size: 16px;
+    }
+
+    /* Шрифт уменьшен для компактности */
+    body {
+        font-size: 14px;
+    }
+
+    /* Основной контент и заголовки */
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content h3, .content h4 {
+        font-size: 16px;
+    }
+}

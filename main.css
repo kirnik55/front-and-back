@@ -1,0 +1,208 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background-color: #fff;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 48px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.info-header {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.info-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+.info-header h3 {
+    margin: 5px 0 0;
+    font-size: 18px;
+    color: #666;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    margin-bottom: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Футер */
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+    /* Make header logo and navigation stack vertically */
+    .logo {
+        position: static;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    header, nav, .info-header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
+
+/* iPhone 12 Pro */
+@media (min-width: 390px) and (max-width: 480px) {
+    header, footer {
+        padding: 15px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    /* Adjust table text for readability on smaller screens */
+    table, th, td {
+        font-size: 14px;
+    }
+    .video-container {
+        position: relative;
+        width: 100%; /* Занимает 100% ширины родительского элемента */
+        padding-bottom: 56.25%; /* Соотношение 16:9 (высота / ширина * 100) */
+        height: 0; /* Высота равна 0, чтобы использовать padding для создания соотношения */
+        overflow: hidden; /* Скрывает все, что выходит за пределы контейнера */
+        margin: 20px 0; /* Отступы сверху и снизу */
+    }
+    
+    .video-container iframe,
+    .video-container video {
+        position: absolute; /* Позволяет позиционировать видео внутри контейнера */
+        top: 0;
+        left: 0;
+        width: 100%; /* Занимает 100% ширины контейнера */
+        height: 100%; /* Занимает 100% высоты контейнера */
+    }
+}
